@@ -17,6 +17,8 @@ is illustrated in the following figure.
 
 ![Overall pipeline of knee X-ray anatomy segmentation](assets/pipeline.png)
 
+![OAI data annotation and review workflow](assets/pipeline_oai_segmentation.png)
+
 ## Dataset
 
 The dataset consists of knee X-ray images collected from the
@@ -25,6 +27,7 @@ Osteoarthritis Initiative (OAI).
 Due to licensing restrictions, the dataset is not included in this repository.
 
 ## Label Definition
+
 tus
 Each pixel is assigned to one of the following classes:
 
