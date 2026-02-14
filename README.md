@@ -31,20 +31,19 @@ Due to licensing restrictions, the dataset is not included in this repository.
 tus
 Each pixel is assigned to one of the following classes:
 
-| ID  | Class Name | Description           |
-| --- | ---------- | --------------------- |
-| 0   | Background | Non-anatomical region |
-| 1   | Femur      | Distal femur          |
-| 2   | Tibia      | Proximal tibia        |
-| 3   | Patella    | Patella               |
-| 4   | Joint      | Joint space           |
-| 5   | ...        | ...                   |
+## Label Definition
 
-## Installation
+Each pixel is assigned to one of the following classes:
 
-```bash
-conda create -n knee-seg python=3.10
-conda activate knee-seg
-pip install -r requirements.txt
+| ID | Class Name               | Description                 |
+|----|--------------------------|-----------------------------|
+| 0  | _background_             | Non-anatomical region       |
+| 1  | Distal femur             | Distal femur region         |
+| 2  | Fibular head             | Fibular head region         |
+| 3  | Proximal tibia           | Proximal tibia region       |
+| 4  | Intercondylar eminence   | Tibial intercondylar eminence |
 
-```
+## Results
+
+Qualitative results on the test set (example predictions from the trained U-Net):
+![results](assets/viz_results.png)
